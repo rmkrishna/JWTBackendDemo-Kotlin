@@ -26,22 +26,6 @@ const val EXPIRE_DATE = 10 * 24 * 60 * 60 * 1000
 @Component
 class JwtTokenUtil : Serializable {
 
-//    fun getUsernameFromToken(token: String): String? = getClaimFromToken(token, claimsResolver = Function { it.subject })
-//
-//    fun getExpirationDateFromToken(token: String): Date? = getClaimFromToken(token, claimsResolver = Function { it.expiration })
-//
-//    fun getAudienceFromToken(token: String): String? = getClaimFromToken(token, claimsResolver = Function { it.audience })
-//
-//    fun <T> getClaimFromToken(token: String, claimsResolver: java.util.function.Function<Claims, T>): T {
-//        val claims = getClaimsFromToken(token)
-//        return claimsResolver.apply(claims)
-//    }
-
-//    fun isTokenExpired(token: String): Boolean {
-//        val expiration = getExpirationDateFromToken(token)
-//        return expiration?.before(Date()) ?: true
-//    }
-
     /**
      * To get the <Claims> using the token
      *
